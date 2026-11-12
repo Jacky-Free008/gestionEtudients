@@ -1,0 +1,154 @@
+body {
+    font-family: arial, sans-serif;
+    background: #f1f5f9;
+    margin: 0;
+    padding: 30px 15px;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+.success-message {
+    background-color: #d1fae5;
+    color: #065f46;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.success-delete-message {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.error-message {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+h1, h2  {
+    color: #1d4ed8;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+.add {
+    background: #2563eb;
+    color: white;
+}
+
+
+
+.delete {
+    background: #dc2626;
+    color: white;
+}
+
+button.update {
+    background-color: #facc15;
+    color: #1e293b;
+}
+
+.student-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.student-actions form {
+    margin: 0;
+}
+
+.student-actions button {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.student-actions svg {
+    width: 18px;
+    height: 18px;
+}
+
+.search {
+    background: #e2e8f0;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    overflow-wrap: anywhere;
+}
+
+th {
+    background: #eff6ff;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-form input {
+    flex: 1;
+}
+
+.search-form button {
+    margin-top: -7px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    table  {
+        min-width: 550px;
+    }
+}

@@ -1,0 +1,59 @@
+body {
+    font-family: arial, sans-serif;
+    background: #f1f5f9;
+    margin: 0;
+    padding: 30px 15px;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+h1, h2  {
+    color: #1d4ed8;
+}
+
+.card h2 .title-name {
+    color: black;
+    font-size: 28px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.edit {
+    background: #2563eb;
+    color: white;
+}
+
+
+
+@media (max-width: 600px) {
+    .card {
+        padding: 15px;
+        overflow-x: auto;
+    }
+}
