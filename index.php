@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $check->execute(['email' => $email]);
 
                 if ($check->fetch()) {
-                    $error_message = "L'email existe déjà. Veuillez utiliser un autre email.";
+                    $_SESSION['error_message'] = "L'email " . $email . " existe déjà. Veuillez utiliser un autre email.";
                 }
                 else {
                     
@@ -50,8 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         $_SESSION['success_add_message'] = "L'étudiant a été ajouté avec succès.";
                     }
 
-                    header('Location: index.php');
-                    exit;
+                    
                 }
             }
         
@@ -169,10 +168,11 @@ function e($value) {
             <?php endif; ?> 
             
 
-            <?php if (!empty($error_message)): ?>
+            <?php if (!empty($_SESSION['error_message'])): ?>
                 <div class="error-message">
-                    <h3><?= $error_message ?></h3>
+                    <h3><?= $_SESSION['error_message'] ?></h3>
                 </div>
+                <?php unset($_SESSION['error_message']); ?>
             <?php endif; ?>
 
             <h2>Ajouter un etudient</h2>
